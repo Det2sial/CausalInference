@@ -1,4 +1,4 @@
-# CausalInference project
+# _Causal Inference Project_
 AUTHORS 
 - Aubhik Mazumdar  
 - Yuan Tian 
