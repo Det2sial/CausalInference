@@ -10,7 +10,7 @@
   - [ ] Find datasets that we can use
   
     
-- [ ] plot difference in the rates and not the rates themselves
+- [x] plot difference in the rates and not the rates themselves
 - [ ] Start writing the paper abstract and the paper introduction
 
 
