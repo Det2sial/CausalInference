@@ -13,15 +13,16 @@ Final project for course CS-582, Causal Inference. What lead to a decrease in cr
 - Employment rate (national) 
 
 DATA
-Abortion(CDC):
+- Abortion(CDC):
 https://www.cdc.gov/reproductivehealth/data_stats/abortion.htm
-Employment rate(BLS)
+- Employment rate(BLS)
 https://data.bls.gov/pdq/SurveyOutputServlet
-Criminal Justice relates(BJS)
+- Criminal Justice relates(BJS)
 https://www.bjs.gov/index.cfm?ty=pbse&sid=40
 
 
 PLOT
+
 ![first_plot](plots/plot1.png)
 
 
