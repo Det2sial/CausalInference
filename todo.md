@@ -7,11 +7,13 @@
 
 **WEEK2**
 - LAST WEEK
-  - [ ] Find datasets that we can use
+  - [x] Find datasets that we can use
   
     
 - [x] plot difference in the rates and not the rates themselves
 - [ ] Start writing the paper abstract and the paper introduction
+- [ ] **A** - Get data from Bloomberg. Employment rate and the Dow Jones Industrial Average
+- [ ] **Y** - Merge datasets of abortion rates
 
 
 - I dont think it will be possible to study the effect of capital punishment as the time period is very variable. Or we can study it but in very basic terms
