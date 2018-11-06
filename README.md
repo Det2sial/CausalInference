@@ -19,6 +19,8 @@ https://www.cdc.gov/reproductivehealth/data_stats/abortion.htm
 https://data.bls.gov/pdq/SurveyOutputServlet
 - Criminal Justice relates(BJS)
 https://www.bjs.gov/index.cfm?ty=pbse&sid=40
+- Labor Statistics(NYC region)
+https://www.labor.ny.gov/stats/nyc/
 
 
 PLOT
