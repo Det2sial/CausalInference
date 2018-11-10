@@ -34,7 +34,6 @@ Working strategies
 	*  Reduced form analysis
 	*  Instrumental variables analysis
   * Grab datasets mentioned in the paper above
-  
 
 
 
