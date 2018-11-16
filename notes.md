@@ -79,3 +79,34 @@ What should we do?
 	* 18 year olds born between 1971-1973 in non-legal states
   * Next, compare arrest/crime rates of 18 year olds born in 1969 and 1971(treatment group, were exposed to legalized abortion in 1971 but not in 1969) and those of 19 year olds born in 1968 and 1970 (control group, not exposed to abortion) 
   * After this, the changes in rates in the legal states can be compared with the same in the non-legal states (18year olds | legal vs 18year olds | non-legal)
+
+
+
+Diff1 = arrest rates of 18 year olds born in 1969 - arrest/crime rates of 18 year olds born in 1980
+
+Diff2 = arrest/crime rates of 19 year olds born in 1968 - arrest/crime rates in 19 year olds born in 1980 
+
+Diff3 = arrest rates of 18 year olds born in 1971 - arrest rates of 18 year olds born in 19..
+
+Diff4 = arrest rates of 18 year olds born in 1971 - arrest rates of 19 year olds born in 19..
+
+
+Once we have these values we have removed all the confounding effects due to the cohort effect and the period and age effects. This will serve as our counterfactual and will be used in our final analysis
+
+
+
+Secondly, we can use the linear/logistic regression model to find the average values of the BETA values for all the intercepts.
+
+Ln(crime_rate) = alpha + BETA1 * (abortion rate)......
+
+Read the papers again to see how they have used the regression models in their studies.
+
+
+Average Causal effect = Diff1 - Diff2
+
+Week 3
+======
+
+  * Find number of police per state per year
+  * Get dow jones average per year
+  * 
