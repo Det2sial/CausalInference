@@ -1,35 +1,19 @@
 ## Dataset processing: Merge by year
 
-import csv
+import pandas as pd
 
-infilename =  r'E:\code\python\causalInference\abortion.csv'
-outfilename = r'E:\code\python\causalInference\dataset.csv'
+inPath = r'E:\code\python\causalInference\abortion.csv'
+outPath = 'E:\code\python\causalInference\dataset.csv'
 
-# values = []
-# with open(infilename,'r') as f:
-#     for line in f:
-#         x = line.strip().split(',')
-#         values.append(x[-1])
-#
-# with open(outfilename,'w',newline = '') as f:
-#     writer = csv.writer(f,delimiter = ',')
-#
-#     for row in values:
-#         writer.writerow([row])
+inf = pd.read_csv(inPath, delimiter = ',')
 
-year = []
-abortion = []
-with open(infilename,'r') as f:
-    for line in f:
-        x = line.strip().split(',')
-        year.append(x[0])
-        abortion.append(x[-1])
+year = inf.iloc[:,0]
+abortion = inf.iloc[:,-1]
 
 
-with open(outfilename,'w',newline = '') as f:
-    fieldnames = ['year','abortion','criminal','police','incarceration']
-    writer = csv.DictWriter(f,fieldnames=fieldnames)
-    writer.writeheader()
-    for row1 in year:
-        for row2 in abortion:
-            writer.writerow({'year':row1,'abortion':row2})
+header = ["year","abortion","crime","Dow_Jones","Incarceration", "Police_Employment"]
+
+df = pd.DataFrame(columns = header)
+df.loc[:,"year"]=year
+df.loc[:,"abortion"]=abortion
+df.to_csv(outPath)
