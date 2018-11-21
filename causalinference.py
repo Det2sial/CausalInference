@@ -17,3 +17,10 @@ df = pd.DataFrame(columns = header)
 df.loc[:,"year"]=year
 df.loc[:,"abortion"]=abortion
 df.to_csv(outPath)
+
+## Merge Crime rate
+
+
+
+## Liner regression
+
