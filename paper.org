@@ -1,0 +1,27 @@
+* ABSTRACT
+
+* INTRODUCTION
+** related work
+
+* DATASETS
+** Include problems about age, state etc
+
+* TECHNIQUES
+** Exploration
+** INtervention
+** Evaluation
+
+
+* Exploration
+
+* Evaluation
+
+* Evaluation
+
+* Results
+
+* Discussions
+
+* Future scope
+
+* References

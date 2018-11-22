@@ -14,7 +14,7 @@ def calculate(all_matrices):
         means.append(diff_column.mean(axis=1))
     print(means)
     print(sum(means)/len(means))
-    # 2 results -
+    # results -
     # 1. very small effect, can't really say that abortion had an effect
     # 2. The effect was actually negative which is a good sign
 
@@ -61,6 +61,7 @@ def main():
         year3 = year2 + 1
         year4 = year3 + 1
         diff_matrix = np.ones((2,24-age1))
+
         for i in range(diff_matrix.shape[1]):
             temp1 = float(table.loc[str(age1),str(year1)].replace(',',''))
             temp2 = float(table.loc[str(age2),str(year2)].replace(',',''))
