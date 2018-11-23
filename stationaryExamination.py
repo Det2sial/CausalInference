@@ -12,14 +12,36 @@ font = {'family': 'serif',
         }
 
 series = Series.from_csv('abortion_NYC.csv',header=0)
-# series.plot()
-# pyplot.title('Abortion', fontdict=font)
-# pyplot.xlabel('Year',fontdict=font)
-# pyplot.ylabel('Reported Rates',fontdict=font)
-# pyplot.grid(True)
-# pyplot.show()
+series.plot()
+pyplot.title('Abortion', fontdict=font)
+pyplot.xlabel('Year',fontdict=font)
+pyplot.ylabel('Reported Rates',fontdict=font)
+pyplot.grid(True)
+pyplot.show()
 
-#log transformation -before parametric statistical test
+# log transformation -before parametric statistical test
+# not now
+
+# ADF (Augmented Dickey Fuller) Test
+
+#define function for ADF test
+from statsmodels.tsa.stattools import adfuller
+def adf_test(timeseries):
+    #Perform Dickey-Fuller test:
+    print ('Results of Dickey-Fuller Test:')
+    dftest = adfuller(timeseries, autolag='AIC')
+    dfoutput = pd.Series(dftest[0:4], index=['Test Statistic','p-value','#Lags Used','Number of Observations Used'])
+    for key,value in dftest[4].items():
+       dfoutput['Critical Value (%s)'%key] = value
+    print (dfoutput)
+
+adf_test(series)
+
+
+
+
+
+
 
 
 # KPSS (Kwiatkowski-Phillips-Schmidt-Shin) Test
