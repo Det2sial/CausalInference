@@ -1,0 +1,43 @@
+Results of Dickey-Fuller Test:
+Test Statistic                 -0.913893
+p-value                         0.783363
+#Lags Used                      1.000000
+Number of Observations Used    32.000000
+Critical Value (1%)            -3.653520
+Critical Value (5%)            -2.957219
+Critical Value (10%)           -2.617588
+dtype: float64
+Results of KPSS Test:
+C:\Users\tt\AppData\Local\Programs\Python\Python36\lib\site-packages\statsmodels\tsa\stattools.py:1278: InterpolationWarning: p-value is greater than the indicated p-value
+  warn("p-value is greater than the indicated p-value", InterpolationWarning)
+Test Statistic            0.321232
+p-value                   0.100000
+Lags Used                10.000000
+Critical Value (10%)      0.347000
+Critical Value (5%)       0.463000
+Critical Value (2.5%)     0.574000
+Critical Value (1%)       0.739000
+dtype: float64
+C:\Users\tt\AppData\Local\Programs\Python\Python36\lib\site-packages\statsmodels\tsa\stattools.py:1278: InterpolationWarning: p-value is greater than the indicated p-value
+  warn("p-value is greater than the indicated p-value", InterpolationWarning)
+-----------------------
+Results of Dickey-Fuller Test:
+Test Statistic                 -3.402166
+p-value                         0.010885
+#Lags Used                      7.000000
+Number of Observations Used    25.000000
+Critical Value (1%)            -3.723863
+Critical Value (5%)            -2.986489
+Critical Value (10%)           -2.632800
+dtype: float64
+Results of KPSS Test:
+Test Statistic            0.199429
+p-value                   0.100000
+Lags Used                10.000000
+Critical Value (10%)      0.347000
+Critical Value (5%)       0.463000
+Critical Value (2.5%)     0.574000
+Critical Value (1%)       0.739000
+dtype: float64
+
+Process finished with exit code 0
