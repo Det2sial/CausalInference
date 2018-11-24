@@ -28,7 +28,7 @@ x = np.transpose(x)
 
 res1 = st.grangercausalitytests(x,maxlag = 10,verbose = True)
     
-
+exit()
 x = np.array([x2,x1])
 x = np.transpose(x)
 
