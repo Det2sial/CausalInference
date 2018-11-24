@@ -1,0 +1,17 @@
+%% Multinomial Logistic Regression
+
+% read csv file and create table
+% header = {'Year','Abortion','DowJones','Incarceration','Crime_Rate'};
+
+data = csvread("E:\code\project\CausalInference-Yuan\regression.csv",1,0);
+year = data(:,1);
+abortion = data(:,2);
+dowjones = data(:,3);
+incarceration = data(:,4);
+crime_rate = data(:,5);
+T = table(year,abortion,dowjones,incarceration,crime_rate);
+
+% multinomial logistic regression
+X = [abortion,dowjones,incareration,crime_rate];
+Y = [crime_rate];
+[B,dev,stats] = mnrfit() 
