@@ -4,6 +4,8 @@ import pandas as pd
 from pandas import Series
 from matplotlib import pyplot
 
+
+## ---------------------------------------------
 # plot and see trend
 font = {'family': 'serif',
         'color':  'black',
@@ -11,20 +13,74 @@ font = {'family': 'serif',
         'size': 16,
         }
 
-series = Series.from_csv('abortion_NYC.csv',header=0)
-series.plot()
-pyplot.title('Abortion', fontdict=font)
-pyplot.xlabel('Year',fontdict=font)
-pyplot.ylabel('Reported Rates',fontdict=font)
-pyplot.grid(True)
-pyplot.show()
+# TODO: read csv file and make a table
+# series = Series.from_csv('regression.csv',header=0)
+# print(series)
+# exit()
+# series.plot()
+# pyplot.title('Abortion', fontdict=font)
+# pyplot.xlabel('Year',fontdict=font)
+# pyplot.ylabel('Reported Rates',fontdict=font)
+# pyplot.grid(True)
+# pyplot.show()
 
-# log transformation -before parametric statistical test
-# not now
+def main():
+    data = pd.read_csv("regression.csv", names=['year','abortion','dowjones','incarceration','crime_rate'])
+    df = pd.DataFrame(data)
+
+    ## abortion
+    # Plot
+    pyplot.plot(df['year'],df['abortion'],'r')
+    pyplot.title('Abortion', fontdict=font)
+    pyplot.xlabel('Year',fontdict=font)
+    pyplot.ylabel('Reported Rates',fontdict=font)
+    pyplot.grid(True)
+    pyplot.show()
+    # adf_test()
+    adf_test(df['abortion'])
+    # kpss_test()
+    kpss_test(df['abortion'])
+
+
+    ## dowjones
+    pyplot.plot(df['year'],df['dowjones'],'y')
+    pyplot.title('Dow Jones Industrial Average', fontdict=font)
+    pyplot.xlabel('Year',fontdict=font)
+    pyplot.ylabel('Index Average',fontdict=font)
+    pyplot.grid(True)
+    pyplot.show()
+    # adf_test()
+    adf_test(df['dowjones'])
+    # kpss_test()
+    kpss_test(df['dowjones'])
+
+
+    # incarceration
+    pyplot.plot(df['year'],df['incarceration'],'b')
+    pyplot.title('Incarceration', fontdict=font)
+    pyplot.xlabel('Year',fontdict=font)
+    pyplot.ylabel('',fontdict=font)
+    pyplot.grid(True)
+    pyplot.show()
+    # adf_test()
+    adf_test(df['incarceration'])
+    # kpss_test()
+    kpss_test(df['incarceration'])
+
+
+main()
+
+# print(df["year"])
+
+
+exit()
+
+# TODO: log transformation -before parametric statistical test
 
 # ADF (Augmented Dickey Fuller) Test
 
-#define function for ADF test
+## ---------------------------------------------
+# define function for ADF test
 from statsmodels.tsa.stattools import adfuller
 def adf_test(timeseries):
     #Perform Dickey-Fuller test:
@@ -35,15 +91,9 @@ def adf_test(timeseries):
        dfoutput['Critical Value (%s)'%key] = value
     print (dfoutput)
 
-adf_test(series)
 
 
-
-
-
-
-
-
+## ---------------------------------------------
 # KPSS (Kwiatkowski-Phillips-Schmidt-Shin) Test
 
 from statsmodels.tsa.stattools import kpss
@@ -60,4 +110,7 @@ def kpss_test(timeseries):
 kpss_test(series)
 
 
-# trend stationary to strict stationary
+## ---------------------------------------------
+# Stationary process
+# Trend differencing
+

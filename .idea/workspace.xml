@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbc50670-d779-418b-8fd6-e7f71a71ac80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abortion.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/abortion.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/age-wise-crimes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/age-wise-crimes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/causalinference.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/dataset.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dow jones average.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dow jones average.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/incarceraion_8016.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/incarceraion_8016.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nyc_crime_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/nyc_crime_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/police_personnel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/police_personnel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/year_wise_crime_total.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/year_wise_crime_total.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CausalInference.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CausalInference.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/abortion_bf_st.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/abortion_bf_st.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stationaryExamination.py" beforeDir="false" afterPath="$PROJECT_DIR$/stationaryExamination.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,16 +46,34 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1223113267">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="1024" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="1024" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stationaryExamination.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="383">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
-                <element signature="e#30#55#0" expanded="true" />
+                <element signature="e#30#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,10 +100,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1283" />
-    <option name="height" value="728" />
+    <option name="x" value="1911" />
+    <option name="y" value="-9" />
+    <option name="width" value="2578" />
+    <option name="height" value="1408" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -104,13 +116,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="CausalInference" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CausalInference" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CausalInference" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CausalInference" type="462c0819:PsiDirectoryNode" />
-              <item name="paper" type="462c0819:PsiDirectoryNode" />
+              <item name="causalInference" type="b2602c69:ProjectViewProjectNode" />
+              <item name="causalInference" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -166,13 +173,14 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
+    <frame x="1913" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18617284" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32890856" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32810968" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -188,22 +196,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/paper/stationary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#30#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/paper/stationary.py" />
     <entry file="file://$PROJECT_DIR$/stationaryExamination.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="383">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
-            <element signature="e#30#55#0" expanded="true" />
+            <element signature="e#30#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
