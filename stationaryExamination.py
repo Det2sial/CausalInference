@@ -139,7 +139,8 @@ def main():
     # kpss_test()
     kpss_test(incar_diff)
     # exit()
-
+    print(incar_diff)
+    exit()
     # crime rate
     pyplot.plot(df['year'],df['crime_rate'],'g')
     pyplot.title('Crime Rate(Before)', fontdict=font)
