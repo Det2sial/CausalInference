@@ -6,13 +6,18 @@ import numpy as np
 
 def calculate(all_matrices):
     means = []
+    s = 0
     for i in range(len(all_matrices)):
         matrix = all_matrices[i]
         diff_column = np.ones((1,matrix.shape[1]))
-        for i in range(matrix.shape[1]):
-            diff_column[0,i] = (matrix[0,i] - matrix[1,i])
-        means.append(diff_column.mean(axis=1))
+        for j in range(matrix.shape[1]):
+            diff_column[0,j] = (matrix[0,j] - matrix[1,j])
+        print(matrix.shape[1])
+        print(diff_column)
+        print(diff_column.mean())
+        means.append(diff_column.mean())
     print(means)
+    print(len(means))
     print(sum(means)/len(means))
     # results -
     # 1. very small effect, can't really say that abortion had an effect

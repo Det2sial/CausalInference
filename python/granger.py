@@ -27,12 +27,19 @@ x = np.array([x1,x2])
 x = np.transpose(x)
 
 res1 = st.grangercausalitytests(x,maxlag = 10,verbose = True)
-    
+print("{:<8} {:<15} {:<10}".format('LAG','F-value','p-value'))
+for k,v in res1.items():
+    d = v[0]
+    print("{:<8} {:<15} {:<10}".format(k,d['params_ftest'][0],d['params_ftest'][1],d['params_ftest'][2]))
 
 x = np.array([x2,x1])
 x = np.transpose(x)
 
 res2  = st.grangercausalitytests(x,maxlag = 10,verbose = True)
+for k,v in res2.items():
+    d = v[0]
+    print("{:<8} {:<15} {:<10}".format(k,d['params_ftest'][0],d['params_ftest'][1],d['params_ftest'][2]))
+
 
 #x1 = np.transpose(x1)
 adf_test1 = st.adfuller(x2)
